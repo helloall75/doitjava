@@ -1,0 +1,14 @@
+package chapter10;
+
+public class RoundRobin implements Scheduler {
+	@Override
+	public void getNextCall() {
+		// TODO 자동 생성된 메소드 스텁
+		System.out.println("상담 전화를 순서대로 대기열에서 가져옵니다.");
+	}
+	@Override
+	public void sendCallToAgent() {
+		// TODO 자동 생성된 메소드 스텁
+		System.out.println("다음 순서 상담원에게 배분합니다.");
+	}
+}

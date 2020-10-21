@@ -1,0 +1,22 @@
+package chapter08;
+
+public class ChildCastingEx {
+
+	public static void main(String[] args) {
+		// TODO 자동 생성된 메소드 스텁
+		ParentCasting parent = new ChildCasting();
+		parent.field1 = "data1";
+		parent.method1();
+		parent.method2();
+		
+		/*
+		 * parent.field2 = "data2";		//불가능
+		 * parent.method3();			//불가능
+		 */
+		
+		ChildCasting child = (ChildCasting)parent;
+		child.field2 = "data2";			//가능
+		child.method3();				//가능
+	}
+
+}
